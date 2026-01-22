@@ -18,9 +18,9 @@ export default function MusicPlayer() {
 
             // Thử các đường dẫn khác nhau
             const musicPaths = [
-                '/music/7-years.mp3',
-                '/music/7-Years.mp3',
-                '/music/7-YEARS.mp3',
+                '/music/until-you.mp3',
+                '/music/until-you.mp3',
+                '/music/until-you.mp3',
             ]
 
             let currentPathIndex = 0
