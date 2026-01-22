@@ -1,0 +1,9 @@
+# Đặt file nhạc "7 Years" vào đây
+# Tên file: 7-years.mp3
+# Hoặc bạn có thể đổi tên file và cập nhật đường dẫn trong MusicPlayer.tsx
+
+# Cách lấy file nhạc:
+# 1. Tải file MP3 từ internet
+# 2. Đổi tên thành "7-years.mp3"
+# 3. Đặt vào thư mục này: public/music/7-years.mp3
+# 4. Website sẽ tự động phát nhạc
