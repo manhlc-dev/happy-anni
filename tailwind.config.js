@@ -1,6 +1,5 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -17,13 +16,13 @@ const config: Config = {
         'peach': '#FFDAB9',
       },
       fontFamily: {
-        'handwriting': ['Dancing Script', 'cursive'],
-        'romantic': ['Great Vibes', 'cursive'],
+        handwriting: ['Dancing Script', 'cursive'],
+        romantic: ['Great Vibes', 'cursive'],
       },
       animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'sparkle': 'sparkle 2s ease-in-out infinite',
-        'heartbeat': 'heartbeat 1.5s ease-in-out infinite',
+        float: 'float 6s ease-in-out infinite',
+        sparkle: 'sparkle 2s ease-in-out infinite',
+        heartbeat: 'heartbeat 1.5s ease-in-out infinite',
       },
       keyframes: {
         float: {
@@ -44,4 +43,3 @@ const config: Config = {
   plugins: [],
   darkMode: 'class',
 }
-export default config
