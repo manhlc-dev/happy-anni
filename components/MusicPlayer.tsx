@@ -169,7 +169,7 @@ export default function MusicPlayer() {
             {/* Floating music button */}
             <motion.button
                 onClick={togglePlay}
-                className="fixed bottom-6 left-6 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-pink-400 to-rose-400 text-white shadow-lg hover:shadow-xl transition-all duration-300 glow hover:glow-strong flex items-center justify-center"
+                className="hidden fixed bottom-6 left-6 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-pink-400 to-rose-400 text-white shadow-lg hover:shadow-xl transition-all duration-300 glow hover:glow-strong flex items-center justify-center"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label={isPlaying ? 'Pause music' : 'Play music'}
@@ -207,7 +207,7 @@ export default function MusicPlayer() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 100 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed bottom-24 left-6 z-50 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-2xl min-w-[280px] sm:min-w-[320px]"
+                        className="hidden fixed bottom-24 left-6 z-50 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-2xl min-w-[280px] sm:min-w-[320px]"
                     >
                         <div className="flex items-center gap-3 mb-3">
                             <div className="w-10 h-10 bg-gradient-to-br from-pink-400 to-rose-400 rounded-full flex items-center justify-center">
