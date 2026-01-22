@@ -76,8 +76,8 @@ export default function StoryPage() {
 
     return (
         <main className={`min-h-screen transition-colors duration-500 ${darkMode
-                ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-gray-800'
-                : 'bg-gradient-to-br from-rose-pastel via-pink-pastel to-lavender'
+            ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-gray-800'
+            : 'bg-gradient-to-br from-rose-pastel via-pink-pastel to-lavender'
             }`}>
             <LogoHeart />
             <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -92,7 +92,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[0].number}
                     isActive={currentChapter === 0}
                 >
-                    <div ref={(el) => (sectionRefs.current[0] = el)}>
+                    <div ref={(el) => { sectionRefs.current[0] = el }}>
                         <LandingPage onNext={() => {
                             setConfettiTrigger(true)
                             window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
@@ -105,7 +105,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[1].number}
                     isActive={currentChapter === 1}
                 >
-                    <div ref={(el) => (sectionRefs.current[1] = el)}>
+                    <div ref={(el) => { sectionRefs.current[1] = el }}>
                         <BurnableLetter />
                     </div>
                 </CinematicSection>
@@ -115,7 +115,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[2].number}
                     isActive={currentChapter === 2}
                 >
-                    <div ref={(el) => (sectionRefs.current[2] = el)}>
+                    <div ref={(el) => { sectionRefs.current[2] = el }}>
                         <Timeline />
                     </div>
                 </CinematicSection>
@@ -125,7 +125,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[3].number}
                     isActive={currentChapter === 3}
                 >
-                    <div ref={(el) => (sectionRefs.current[3] = el)}>
+                    <div ref={(el) => { sectionRefs.current[3] = el }}>
                         <CountdownTimer
                             targetDate="2025-12-31"
                             title={viewMode === 'together'
@@ -141,7 +141,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[4].number}
                     isActive={currentChapter === 4}
                 >
-                    <div ref={(el) => (sectionRefs.current[4] = el)}>
+                    <div ref={(el) => { sectionRefs.current[4] = el }}>
                         <MemoryQuizGame />
                     </div>
                 </CinematicSection>
@@ -151,7 +151,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[5].number}
                     isActive={currentChapter === 5}
                 >
-                    <div ref={(el) => (sectionRefs.current[5] = el)}>
+                    <div ref={(el) => { sectionRefs.current[5] = el }}>
                         <MiniGame />
                     </div>
                 </CinematicSection>
@@ -161,7 +161,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[6].number}
                     isActive={currentChapter === 6}
                 >
-                    <div ref={(el) => (sectionRefs.current[6] = el)}>
+                    <div ref={(el) => { sectionRefs.current[6] = el }}>
                         <PhotoAlbum />
                     </div>
                 </CinematicSection>
@@ -171,7 +171,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[7].number}
                     isActive={currentChapter === 7}
                 >
-                    <div ref={(el) => (sectionRefs.current[7] = el)}>
+                    <div ref={(el) => { sectionRefs.current[7] = el }}>
                         <MemoryBox />
                     </div>
                 </CinematicSection>
@@ -181,7 +181,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[8].number}
                     isActive={currentChapter === 8}
                 >
-                    <div ref={(el) => (sectionRefs.current[8] = el)}>
+                    <div ref={(el) => { sectionRefs.current[8] = el }}>
                         <FuturePromises />
                     </div>
                 </CinematicSection>
@@ -191,7 +191,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[9].number}
                     isActive={currentChapter === 9}
                 >
-                    <div ref={(el) => (sectionRefs.current[9] = el)}>
+                    <div ref={(el) => { sectionRefs.current[9] = el }}>
                         <LoveQuotes />
                     </div>
                 </CinematicSection>
@@ -201,7 +201,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[10].number}
                     isActive={currentChapter === 10}
                 >
-                    <div ref={(el) => (sectionRefs.current[10] = el)}>
+                    <div ref={(el) => { sectionRefs.current[10] = el }}>
                         <TimeCapsule
                             targetDate="2026-12-31"
                             message={viewMode === 'together'
@@ -217,7 +217,7 @@ export default function StoryPage() {
                     chapterNumber={chapters[11].number}
                     isActive={currentChapter === 11}
                 >
-                    <div ref={(el) => (sectionRefs.current[11] = el)}>
+                    <div ref={(el) => { sectionRefs.current[11] = el }}>
                         <EndingPage />
                     </div>
                 </CinematicSection>
